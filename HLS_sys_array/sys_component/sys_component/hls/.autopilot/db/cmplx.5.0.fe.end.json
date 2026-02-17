@@ -1,0 +1,59 @@
+{
+    "1": {
+        "name": "systolic_array_kernel_Pipeline_CYCLE",
+        "file": "systolic.cpp",
+        "fileloc": "67",
+        "instructions": "1203",
+        "total_instructions": "1203",
+        "calls": "",
+        "basicblocks": "36",
+        "memory_accesses": "386",
+        "control_depth": "2",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "241"
+        },
+        "stores": {
+            "L": "354"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "systolic_array_kernel_Pipeline_EXTRACT_I_EXTRACT_J",
+        "file": "systolic.cpp",
+        "fileloc": "160",
+        "instructions": "107",
+        "total_instructions": "107",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "7",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "systolic_array_kernel",
+        "file": "systolic.cpp",
+        "fileloc": "11",
+        "instructions": "153",
+        "total_instructions": "1463",
+        "calls": "1 2",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "64"
+        }
+    }
+}

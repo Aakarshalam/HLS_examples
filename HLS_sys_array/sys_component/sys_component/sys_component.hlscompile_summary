@@ -1,0 +1,246 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\sys_component.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/12/26 07:51:40",
+ "timestampMillis": "1770862900677",
+ "buildStep": {
+  "cmdId": "5362d06c-d267-410a-9b69-b23f41834c9e",
+  "name": "v++",
+  "logFile": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\logs\\sys_component.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\hls_config.cfg --work_dir sys_component ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "C:\\Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\hls_config.cfg",
+   "--work_dir",
+   "sys_component"
+  ],
+  "iniFiles": [
+   {
+    "path": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\hls_config.cfg",
+    "content": "part=xc7z020clg484-1\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nclock=10ns\nsyn.file=systolic.cpp\nsyn.file=systolic.h\ntb.file=testbench.cpp\nsyn.top=systolic_array_kernel"
+   }
+  ],
+  "cwd": "C:\\Users\\Nani\\workspace\\HLS_testing_3\\sys_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/12/26 07:51:40",
+ "timestampMillis": "1770862900682",
+ "status": {
+  "cmdId": "5362d06c-d267-410a-9b69-b23f41834c9e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/12/26 07:51:47",
+ "timestampMillis": "1770862907485",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "systolic_array_kernel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\systolic.cpp",
+     "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\systolic.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/12/26 07:51:47",
+ "timestampMillis": "1770862907486",
+ "buildStep": {
+  "cmdId": "49842b78-304e-4a18-8842-d6f845e4b740",
+  "name": "",
+  "logFile": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\Nani\\workspace\\HLS_testing_3\\sys_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/12/26 07:51:47",
+ "timestampMillis": "1770862907487",
+ "status": {
+  "cmdId": "49842b78-304e-4a18-8842-d6f845e4b740",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/12/26 07:51:47",
+ "timestampMillis": "1770862907487",
+ "report": {
+  "path": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/12/26 07:51:47",
+ "timestampMillis": "1770862907487",
+ "report": {
+  "path": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/12/26 07:51:47",
+ "timestampMillis": "1770862907487",
+ "report": {
+  "path": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/12/26 07:52:16",
+ "timestampMillis": "1770862936971",
+ "report": {
+  "path": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/12/26 07:52:16",
+ "timestampMillis": "1770862936972",
+ "report": {
+  "path": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/12/26 07:52:16",
+ "timestampMillis": "1770862936972",
+ "report": {
+  "path": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/12/26 07:52:16",
+ "timestampMillis": "1770862936973",
+ "status": {
+  "cmdId": "49842b78-304e-4a18-8842-d6f845e4b740",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/12/26 07:52:17",
+ "timestampMillis": "1770862937181",
+ "status": {
+  "cmdId": "5362d06c-d267-410a-9b69-b23f41834c9e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/12/26 07:52:17",
+ "timestampMillis": "1770862937208",
+ "report": {
+  "path": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\reports\\v++_compile_sys_component_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/12/26 07:52:17",
+ "timestampMillis": "1770862937208",
+ "report": {
+  "path": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\reports\\.db\\v++_compile_sys_component_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

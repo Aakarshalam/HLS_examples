@@ -1,0 +1,26 @@
+========================================
+Simple Systolic Array Testbench
+Array Size: 8x8
+========================================
+
+[Test 1] Simple pattern...
+  ✓ PASSED
+
+[Test 2] Identity matrix...
+  ✓ PASSED
+
+[Test 3] All ones...
+  ✓ PASSED
+  Result: C[0][0] = 8 (expected 8)
+
+[Test 4] Random values...
+  ✓ PASSED
+
+[Test 5] Zero matrix...
+  ✓ PASSED
+  Result: C[0][0] = 0 (expected 0)
+
+========================================
+Tests Passed: 5 / 5
+✓✓✓ ALL TESTS PASSED! ✓✓✓
+========================================

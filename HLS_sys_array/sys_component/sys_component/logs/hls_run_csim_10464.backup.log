@@ -1,0 +1,155 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir C:/Users/Nani/workspace/HLS_testing_3/sys_component/sys_component 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/Nani/workspace/HLS_testing_3/sys_component/sys_component/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/Nani/workspace/HLS_testing_3/sys_component/sys_component'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file C:/Users/Nani/workspace/HLS_testing_3/sys_component/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=systolic.cpp' from C:/Users/Nani/workspace/HLS_testing_3/sys_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Nani/workspace/HLS_testing_3/sys_component/systolic.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=systolic.h' from C:/Users/Nani/workspace/HLS_testing_3/sys_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Nani/workspace/HLS_testing_3/sys_component/systolic.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=testbench.cpp' from C:/Users/Nani/workspace/HLS_testing_3/sys_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Nani/workspace/HLS_testing_3/sys_component/testbench.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/Users/Nani/workspace/HLS_testing_3/sys_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg484-1' from C:/Users/Nani/workspace/HLS_testing_3/sys_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from C:/Users/Nani/workspace/HLS_testing_3/sys_component/hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/Users/Nani/workspace/HLS_testing_3/sys_component/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/Nani/workspace/HLS_testing_3/sys_component/sys_component/vitis-comp.json
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../testbench.cpp in debug mode
+   Compiling ../../../../systolic.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../testbench.cpp:1:
+In file included from ../../../../systolic.h:4:
+In file included from C:/Xilinx/2025.1/Vitis/include/ap_int.h:10:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_common.h:677:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_half.h:26:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_fpo.h:140:
+In file included from C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/2025.1/Vitis/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../systolic.cpp:1:
+In file included from ../../../../systolic.h:4:
+In file included from C:/Xilinx/2025.1/Vitis/include/ap_int.h:10:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_common.h:677:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_half.h:26:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_fpo.h:140:
+In file included from C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/2025.1/Vitis/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+========================================
+Systolic Array HLS Testbench
+Array Size: 4x4
+Max Matrix Dim: 16x16
+========================================
+
+[Test 1] Single tile (4x4)...
+  ✓ PASSED
+
+[Test 2] Multiple tiles (8x8)...
+  MISMATCH at [0][0]: HW=12 SW=8
+  MISMATCH at [0][1]: HW=24 SW=16
+  MISMATCH at [0][2]: HW=36 SW=24
+  MISMATCH at [0][3]: HW=44 SW=32
+  MISMATCH at [0][4]: HW=60 SW=40
+  MISMATCH at [0][5]: HW=72 SW=48
+  MISMATCH at [0][6]: HW=84 SW=56
+  MISMATCH at [0][7]: HW=88 SW=64
+  MISMATCH at [1][0]: HW=24 SW=16
+  MISMATCH at [1][1]: HW=48 SW=32
+  MISMATCH at [1][2]: HW=66 SW=48
+  MISMATCH at [1][3]: HW=80 SW=64
+  MISMATCH at [1][4]: HW=120 SW=80
+  MISMATCH at [1][5]: HW=144 SW=96
+  MISMATCH at [1][6]: HW=154 SW=112
+  MISMATCH at [1][7]: HW=160 SW=128
+  MISMATCH at [2][0]: HW=36 SW=24
+  MISMATCH at [2][1]: HW=66 SW=48
+  MISMATCH at [2][2]: HW=90 SW=72
+  MISMATCH at [2][3]: HW=108 SW=96
+  MISMATCH at [2][4]: HW=180 SW=120
+  MISMATCH at [2][5]: HW=198 SW=144
+  MISMATCH at [2][6]: HW=210 SW=168
+  MISMATCH at [2][7]: HW=216 SW=192
+  MISMATCH at [3][0]: HW=44 SW=32
+  MISMATCH at [3][1]: HW=80 SW=64
+  MISMATCH at [3][2]: HW=108 SW=96
+  MISMATCH at [3][4]: HW=220 SW=160
+  MISMATCH at [3][5]: HW=240 SW=192
+  MISMATCH at [3][6]: HW=252 SW=224
+  MISMATCH at [4][0]: HW=60 SW=40
+  MISMATCH at [4][1]: HW=120 SW=80
+  MISMATCH at [4][2]: HW=180 SW=120
+  MISMATCH at [4][3]: HW=220 SW=160
+  MISMATCH at [4][4]: HW=300 SW=200
+  MISMATCH at [4][5]: HW=360 SW=240
+  MISMATCH at [4][6]: HW=420 SW=280
+  MISMATCH at [4][7]: HW=440 SW=320
+  MISMATCH at [5][0]: HW=72 SW=48
+  MISMATCH at [5][1]: HW=144 SW=96
+  MISMATCH at [5][2]: HW=198 SW=144
+  MISMATCH at [5][3]: HW=240 SW=192
+  MISMATCH at [5][4]: HW=360 SW=240
+  MISMATCH at [5][5]: HW=432 SW=288
+  MISMATCH at [5][6]: HW=462 SW=336
+  MISMATCH at [5][7]: HW=480 SW=384
+  MISMATCH at [6][0]: HW=84 SW=56
+  MISMATCH at [6][1]: HW=154 SW=112
+  MISMATCH at [6][2]: HW=210 SW=168
+  MISMATCH at [6][3]: HW=252 SW=224
+  MISMATCH at [6][4]: HW=420 SW=280
+  MISMATCH at [6][5]: HW=462 SW=336
+  MISMATCH at [6][6]: HW=490 SW=392
+  MISMATCH at [6][7]: HW=504 SW=448
+  MISMATCH at [7][0]: HW=88 SW=64
+  MISMATCH at [7][1]: HW=160 SW=128
+  MISMATCH at [7][2]: HW=216 SW=192
+  MISMATCH at [7][4]: HW=440 SW=320
+  MISMATCH at [7][5]: HW=480 SW=384
+  MISMATCH at [7][6]: HW=504 SW=448
+  ✗ FAILED
+
+[Test 3] Identity matrix (4x4)...
+  ✓ PASSED
+
+[Test 4] Random values (12x12)...
+  MISMATCH at [0][0]: HW=-9 SW=12
+  MISMATCH at [0][1]: HW=-106 SW=-80
+  MISMATCH at [0][2]: HW=27 SW=41
+  MISMATCH at [0][3]: HW=-3 SW=0
+  MISMATCH at [0][4]: HW=130 SW=96
+  ✗ FAILED (133 mismatches)
+
+[Test 5] Rectangular matrix (6x8 * 8x10)...
+  ✗ FAILED
+
+========================================
+Tests Passed: 2 / 5
+✗ SOME TESTS FAILED
+========================================
+@E Simulation failed: Function 'main' returns nonzero value '1'.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 8.793 seconds; peak allocated memory: 426.715 MB.

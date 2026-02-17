@@ -1,0 +1,186 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./systolic.h:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="reset" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./systolic.h:26:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="compute" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./systolic.h:37:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_result" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="systolic_array_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=systolic_array_kernel" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="systolic.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=m_axi port=A offset=slave bundle=gmem0" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="systolic.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=m_axi port=B offset=slave bundle=gmem1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="systolic.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=m_axi port=C offset=slave bundle=gmem2" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="systolic.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="systolic.cpp:26:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=pe_array complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="systolic.cpp:32:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=a_data complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="systolic.cpp:35:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=b_data complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="systolic.cpp:42:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="systolic.cpp:49:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="systolic.cpp:56:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="systolic.cpp:68:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="systolic.cpp:76:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="systolic.cpp:89:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="systolic.cpp:106:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=a_temp complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="systolic.cpp:109:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=b_temp complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="systolic.cpp:114:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="systolic.cpp:121:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="systolic.cpp:129:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="systolic.cpp:143:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="systolic.cpp:150:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="systolic.cpp:162:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="systolic_array_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="systolic.cpp:43:17" msg_body="Inlining function 'PE::reset()' into 'systolic_array_kernel(ap_int&lt;16&gt; (*) [8], ap_int&lt;16&gt; (*) [8], ap_int&lt;16&gt; (*) [8])'">
+        <args Callee="PE::reset()" Callee-DebugLoc="File ./systolic.h Line 20 Column 0" Caller="systolic_array_kernel(ap_int&lt;16&gt; (*) [8], ap_int&lt;16&gt; (*) [8], ap_int&lt;16&gt; (*) [8])" Caller-DebugLoc="File systolic.cpp Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="systolic.cpp:163:27" msg_body="Inlining function 'PE::get_result()' into 'systolic_array_kernel(ap_int&lt;16&gt; (*) [8], ap_int&lt;16&gt; (*) [8], ap_int&lt;16&gt; (*) [8])'">
+        <args Callee="PE::get_result()" Callee-DebugLoc="File ./systolic.h Line 36 Column 0" Caller="systolic_array_kernel(ap_int&lt;16&gt; (*) [8], ap_int&lt;16&gt; (*) [8], ap_int&lt;16&gt; (*) [8])" Caller-DebugLoc="File systolic.cpp Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="systolic.cpp:131:17" msg_body="Inlining function 'PE::compute(ap_int&lt;16&gt;, ap_int&lt;16&gt;, ap_int&lt;16&gt;&amp;, ap_int&lt;16&gt;&amp;)' into 'systolic_array_kernel(ap_int&lt;16&gt; (*) [8], ap_int&lt;16&gt; (*) [8], ap_int&lt;16&gt; (*) [8])'">
+        <args Callee="PE::compute(ap_int&lt;16&gt;, ap_int&lt;16&gt;, ap_int&lt;16&gt;&amp;, ap_int&lt;16&gt;&amp;)" Callee-DebugLoc="File ./systolic.h Line 25 Column 0" Caller="systolic_array_kernel(ap_int&lt;16&gt; (*) [8], ap_int&lt;16&gt; (*) [8], ap_int&lt;16&gt; (*) [8])" Caller-DebugLoc="File systolic.cpp Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="systolic.cpp:75:11" msg_body="Loop 'INPUT_A' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="INPUT_A"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="systolic.cpp:88:18" msg_body="Loop 'INPUT_B' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="INPUT_B"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="systolic.cpp:112:15" msg_body="Loop 'INIT_A_TEMP' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="INIT_A_TEMP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="systolic.cpp:113:31" msg_body="Loop 'VITIS_LOOP_113_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_113_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="systolic.cpp:119:22" msg_body="Loop 'INIT_B_TEMP' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="INIT_B_TEMP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="systolic.cpp:120:31" msg_body="Loop 'VITIS_LOOP_120_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_120_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="systolic.cpp:127:20" msg_body="Loop 'COMPUTE_I' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="COMPUTE_I"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="systolic.cpp:128:24" msg_body="Loop 'COMPUTE_J' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="COMPUTE_J"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="systolic.cpp:141:20" msg_body="Loop 'FORWARD_A' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="FORWARD_A"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="systolic.cpp:142:31" msg_body="Loop 'VITIS_LOOP_142_6' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_142_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="systolic.cpp:148:20" msg_body="Loop 'FORWARD_B' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="FORWARD_B"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="systolic.cpp:149:31" msg_body="Loop 'VITIS_LOOP_149_7' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_149_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="systolic.cpp:15:0" msg_body="Unrolling loop 'INPUT_A' (systolic.cpp:75:11) in function 'systolic_array_kernel' completely with a factor of 8">
+        <args Factor="8" LoopLoc="systolic.cpp:75:11" LoopName="INPUT_A"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="systolic.cpp:15:0" msg_body="Unrolling loop 'INPUT_B' (systolic.cpp:88:18) in function 'systolic_array_kernel' completely with a factor of 8">
+        <args Factor="8" LoopLoc="systolic.cpp:88:18" LoopName="INPUT_B"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="systolic.cpp:15:0" msg_body="Unrolling loop 'INIT_A_TEMP' (systolic.cpp:112:15) in function 'systolic_array_kernel' completely with a factor of 8">
+        <args Factor="8" LoopLoc="systolic.cpp:112:15" LoopName="INIT_A_TEMP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="systolic.cpp:15:0" msg_body="Unrolling loop 'VITIS_LOOP_113_4' (systolic.cpp:113:31) in function 'systolic_array_kernel' completely with a factor of 9">
+        <args Factor="9" LoopLoc="systolic.cpp:113:31" LoopName="VITIS_LOOP_113_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="systolic.cpp:15:0" msg_body="Unrolling loop 'INIT_B_TEMP' (systolic.cpp:119:22) in function 'systolic_array_kernel' completely with a factor of 9">
+        <args Factor="9" LoopLoc="systolic.cpp:119:22" LoopName="INIT_B_TEMP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="systolic.cpp:15:0" msg_body="Unrolling loop 'VITIS_LOOP_120_5' (systolic.cpp:120:31) in function 'systolic_array_kernel' completely with a factor of 8">
+        <args Factor="8" LoopLoc="systolic.cpp:120:31" LoopName="VITIS_LOOP_120_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="systolic.cpp:15:0" msg_body="Unrolling loop 'COMPUTE_I' (systolic.cpp:127:20) in function 'systolic_array_kernel' completely with a factor of 8">
+        <args Factor="8" LoopLoc="systolic.cpp:127:20" LoopName="COMPUTE_I"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="systolic.cpp:15:0" msg_body="Unrolling loop 'COMPUTE_J' (systolic.cpp:128:24) in function 'systolic_array_kernel' completely with a factor of 8">
+        <args Factor="8" LoopLoc="systolic.cpp:128:24" LoopName="COMPUTE_J"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="systolic.cpp:15:0" msg_body="Unrolling loop 'FORWARD_A' (systolic.cpp:141:20) in function 'systolic_array_kernel' completely with a factor of 8">
+        <args Factor="8" LoopLoc="systolic.cpp:141:20" LoopName="FORWARD_A"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="systolic.cpp:15:0" msg_body="Unrolling loop 'VITIS_LOOP_142_6' (systolic.cpp:142:31) in function 'systolic_array_kernel' completely with a factor of 8">
+        <args Factor="8" LoopLoc="systolic.cpp:142:31" LoopName="VITIS_LOOP_142_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="systolic.cpp:15:0" msg_body="Unrolling loop 'FORWARD_B' (systolic.cpp:148:20) in function 'systolic_array_kernel' completely with a factor of 8">
+        <args Factor="8" LoopLoc="systolic.cpp:148:20" LoopName="FORWARD_B"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="systolic.cpp:15:0" msg_body="Unrolling loop 'VITIS_LOOP_149_7' (systolic.cpp:149:31) in function 'systolic_array_kernel' completely with a factor of 8">
+        <args Factor="8" LoopLoc="systolic.cpp:149:31" LoopName="VITIS_LOOP_149_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="systolic.cpp:15:0" msg_body="Unrolling loop 'VITIS_LOOP_55_3' (systolic.cpp:55:26) in function 'systolic_array_kernel' completely with a factor of 8">
+        <args Factor="8" LoopLoc="systolic.cpp:55:26" LoopName="VITIS_LOOP_55_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="systolic.cpp:15:0" msg_body="Unrolling loop 'VITIS_LOOP_48_2' (systolic.cpp:48:26) in function 'systolic_array_kernel' completely with a factor of 9">
+        <args Factor="9" LoopLoc="systolic.cpp:48:26" LoopName="VITIS_LOOP_48_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="systolic.cpp:15:0" msg_body="Unrolling loop 'VITIS_LOOP_41_1' (systolic.cpp:41:26) in function 'systolic_array_kernel' completely with a factor of 8">
+        <args Factor="8" LoopLoc="systolic.cpp:41:26" LoopName="VITIS_LOOP_41_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="systolic.cpp:25:5" msg_body="Applying array_partition to 'pe_array': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="pe_array"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="systolic.cpp:31:9" msg_body="Applying array_partition to 'a_data': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="a_data"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="systolic.cpp:34:9" msg_body="Applying array_partition to 'b_data': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="b_data"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="systolic.cpp:15:0" msg_body="Aggregating maxi variable 'C' with compact=none mode in 16-bits">
+        <args AggregateTypeName="compact=none" Bitwidth="16" HwTyName="maxi" Name="C"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="systolic.cpp:15:0" msg_body="Aggregating maxi variable 'B' with compact=none mode in 16-bits">
+        <args AggregateTypeName="compact=none" Bitwidth="16" HwTyName="maxi" Name="B"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="systolic.cpp:15:0" msg_body="Aggregating maxi variable 'A' with compact=none mode in 16-bits">
+        <args AggregateTypeName="compact=none" Bitwidth="16" HwTyName="maxi" Name="A"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

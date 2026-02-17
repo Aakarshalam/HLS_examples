@@ -1,0 +1,227 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\sys_component.hlsrun_cosim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/12/26 07:52:41",
+ "timestampMillis": "1770862961489",
+ "buildStep": {
+  "cmdId": "752cd7fb-38ac-4959-8509-18e98cd6fbdc",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\logs\\sys_component.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --cosim --config C:\\Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\hls_config.cfg --work_dir sys_component ",
+  "args": [
+   "--mode",
+   "hls",
+   "--cosim",
+   "--config",
+   "C:\\Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\hls_config.cfg",
+   "--work_dir",
+   "sys_component"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\Nani\\workspace\\HLS_testing_3\\sys_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/12/26 07:52:41",
+ "timestampMillis": "1770862961489",
+ "status": {
+  "cmdId": "752cd7fb-38ac-4959-8509-18e98cd6fbdc",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/12/26 07:52:48",
+ "timestampMillis": "1770862968462",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_RTL_COSIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "systolic_array_kernel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\systolic.cpp",
+     "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\systolic.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/12/26 07:52:48",
+ "timestampMillis": "1770862968464",
+ "buildStep": {
+  "cmdId": "81c32c48-ba97-49ab-96e7-de3b5dc4b20b",
+  "name": "",
+  "logFile": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\Nani\\workspace\\HLS_testing_3\\sys_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/12/26 07:52:48",
+ "timestampMillis": "1770862968464",
+ "status": {
+  "cmdId": "81c32c48-ba97-49ab-96e7-de3b5dc4b20b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/12/26 07:52:48",
+ "timestampMillis": "1770862968464",
+ "report": {
+  "path": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\hls\\sim\\report\\systolic_array_kernel_cosim.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_COSIMULATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/12/26 07:52:48",
+ "timestampMillis": "1770862968465",
+ "report": {
+  "path": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/12/26 07:52:48",
+ "timestampMillis": "1770862968465",
+ "report": {
+  "path": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH_COSIM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/12/26 07:52:48",
+ "timestampMillis": "1770862968466",
+ "report": {
+  "path": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_TIMELINE_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/12/26 07:52:48",
+ "timestampMillis": "1770862968466",
+ "report": {
+  "path": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_WAVE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/12/26 07:54:01",
+ "timestampMillis": "1770863041075",
+ "status": {
+  "cmdId": "81c32c48-ba97-49ab-96e7-de3b5dc4b20b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/12/26 07:54:01",
+ "timestampMillis": "1770863041233",
+ "status": {
+  "cmdId": "752cd7fb-38ac-4959-8509-18e98cd6fbdc",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/12/26 07:54:01",
+ "timestampMillis": "1770863041234",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/12/26 07:54:01",
+ "timestampMillis": "1770863041234",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

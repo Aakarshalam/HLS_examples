@@ -1,0 +1,103 @@
+---
+MainSourceFile:  'C:/Users/Nani/workspace/HLS_testing_3/sys_component/sys_component/hls/.autopilot/db/systolic.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp'
+        Offset:          279625
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp'
+        Offset:          280091
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp'
+        Offset:          280558
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1248_1:  '
+    FileOffset:      1248
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp'
+        Offset:          575028
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_41_1:  '
+    FileOffset:      41
+    FilePath:        systolic.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp'
+        Offset:          952448
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_41_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_48_2:  '
+    FileOffset:      48
+    FilePath:        systolic.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp'
+        Offset:          952589
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_48_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_55_3:  '
+    FileOffset:      55
+    FilePath:        systolic.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp'
+        Offset:          952726
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_55_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_113_4:  '
+    FileOffset:      113
+    FilePath:        systolic.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp'
+        Offset:          953643
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_113_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_120_5:  '
+    FileOffset:      120
+    FilePath:        systolic.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp'
+        Offset:          953801
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_120_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_142_6:  '
+    FileOffset:      142
+    FilePath:        systolic.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp'
+        Offset:          954287
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_142_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_149_7:  '
+    FileOffset:      149
+    FilePath:        systolic.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp'
+        Offset:          954454
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_149_7: '
+...

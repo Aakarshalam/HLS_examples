@@ -1,0 +1,326 @@
+
+
+================================================================
+== Vitis HLS Report for 'systolic_array_kernel'
+================================================================
+* Date:           Thu Feb 12 07:52:11 2026
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        sys_component
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      272|      272|  2.720 us|  2.720 us|  273|  273|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 9
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.00>
+ST_1 : Operation 10 [1/1] (1.00ns)   --->   "%C_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %C"   --->   Operation 10 'read' 'C_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 11 [1/1] (1.00ns)   --->   "%B_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %B"   --->   Operation 11 'read' 'B_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 12 [1/1] (1.00ns)   --->   "%A_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %A"   --->   Operation 12 'read' 'A_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%conv3_i_i290_loc = alloca i64 1"   --->   Operation 13 'alloca' 'conv3_i_i290_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%conv3_i_i_1159292_loc = alloca i64 1"   --->   Operation 14 'alloca' 'conv3_i_i_1159292_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%conv3_i_i_2169294_loc = alloca i64 1"   --->   Operation 15 'alloca' 'conv3_i_i_2169294_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%conv3_i_i_3179296_loc = alloca i64 1"   --->   Operation 16 'alloca' 'conv3_i_i_3179296_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%conv3_i_i_4189298_loc = alloca i64 1"   --->   Operation 17 'alloca' 'conv3_i_i_4189298_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%conv3_i_i_5199300_loc = alloca i64 1"   --->   Operation 18 'alloca' 'conv3_i_i_5199300_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%conv3_i_i_6209302_loc = alloca i64 1"   --->   Operation 19 'alloca' 'conv3_i_i_6209302_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%conv3_i_i_7219304_loc = alloca i64 1"   --->   Operation 20 'alloca' 'conv3_i_i_7219304_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%conv3_i_i_1306_loc = alloca i64 1"   --->   Operation 21 'alloca' 'conv3_i_i_1306_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%conv3_i_i_1_1309_loc = alloca i64 1"   --->   Operation 22 'alloca' 'conv3_i_i_1_1309_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%conv3_i_i_1_2312_loc = alloca i64 1"   --->   Operation 23 'alloca' 'conv3_i_i_1_2312_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%conv3_i_i_1_3315_loc = alloca i64 1"   --->   Operation 24 'alloca' 'conv3_i_i_1_3315_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%conv3_i_i_1_4318_loc = alloca i64 1"   --->   Operation 25 'alloca' 'conv3_i_i_1_4318_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%conv3_i_i_1_5321_loc = alloca i64 1"   --->   Operation 26 'alloca' 'conv3_i_i_1_5321_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%conv3_i_i_1_6324_loc = alloca i64 1"   --->   Operation 27 'alloca' 'conv3_i_i_1_6324_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%conv3_i_i_1_7327_loc = alloca i64 1"   --->   Operation 28 'alloca' 'conv3_i_i_1_7327_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%conv3_i_i_2329_loc = alloca i64 1"   --->   Operation 29 'alloca' 'conv3_i_i_2329_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%conv3_i_i_2_1332_loc = alloca i64 1"   --->   Operation 30 'alloca' 'conv3_i_i_2_1332_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%conv3_i_i_2_2335_loc = alloca i64 1"   --->   Operation 31 'alloca' 'conv3_i_i_2_2335_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%conv3_i_i_2_3338_loc = alloca i64 1"   --->   Operation 32 'alloca' 'conv3_i_i_2_3338_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%conv3_i_i_2_4341_loc = alloca i64 1"   --->   Operation 33 'alloca' 'conv3_i_i_2_4341_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%conv3_i_i_2_5344_loc = alloca i64 1"   --->   Operation 34 'alloca' 'conv3_i_i_2_5344_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%conv3_i_i_2_6347_loc = alloca i64 1"   --->   Operation 35 'alloca' 'conv3_i_i_2_6347_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%conv3_i_i_2_7350_loc = alloca i64 1"   --->   Operation 36 'alloca' 'conv3_i_i_2_7350_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%conv3_i_i_3352_loc = alloca i64 1"   --->   Operation 37 'alloca' 'conv3_i_i_3352_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%conv3_i_i_3_1355_loc = alloca i64 1"   --->   Operation 38 'alloca' 'conv3_i_i_3_1355_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%conv3_i_i_3_2358_loc = alloca i64 1"   --->   Operation 39 'alloca' 'conv3_i_i_3_2358_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%conv3_i_i_3_3361_loc = alloca i64 1"   --->   Operation 40 'alloca' 'conv3_i_i_3_3361_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%conv3_i_i_3_4364_loc = alloca i64 1"   --->   Operation 41 'alloca' 'conv3_i_i_3_4364_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%conv3_i_i_3_5367_loc = alloca i64 1"   --->   Operation 42 'alloca' 'conv3_i_i_3_5367_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%conv3_i_i_3_6370_loc = alloca i64 1"   --->   Operation 43 'alloca' 'conv3_i_i_3_6370_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%conv3_i_i_3_7373_loc = alloca i64 1"   --->   Operation 44 'alloca' 'conv3_i_i_3_7373_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%conv3_i_i_4375_loc = alloca i64 1"   --->   Operation 45 'alloca' 'conv3_i_i_4375_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%conv3_i_i_4_1378_loc = alloca i64 1"   --->   Operation 46 'alloca' 'conv3_i_i_4_1378_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%conv3_i_i_4_2381_loc = alloca i64 1"   --->   Operation 47 'alloca' 'conv3_i_i_4_2381_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%conv3_i_i_4_3384_loc = alloca i64 1"   --->   Operation 48 'alloca' 'conv3_i_i_4_3384_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%conv3_i_i_4_4387_loc = alloca i64 1"   --->   Operation 49 'alloca' 'conv3_i_i_4_4387_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%conv3_i_i_4_5390_loc = alloca i64 1"   --->   Operation 50 'alloca' 'conv3_i_i_4_5390_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%conv3_i_i_4_6393_loc = alloca i64 1"   --->   Operation 51 'alloca' 'conv3_i_i_4_6393_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%conv3_i_i_4_7396_loc = alloca i64 1"   --->   Operation 52 'alloca' 'conv3_i_i_4_7396_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%conv3_i_i_5398_loc = alloca i64 1"   --->   Operation 53 'alloca' 'conv3_i_i_5398_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%conv3_i_i_5_1401_loc = alloca i64 1"   --->   Operation 54 'alloca' 'conv3_i_i_5_1401_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%conv3_i_i_5_2404_loc = alloca i64 1"   --->   Operation 55 'alloca' 'conv3_i_i_5_2404_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%conv3_i_i_5_3407_loc = alloca i64 1"   --->   Operation 56 'alloca' 'conv3_i_i_5_3407_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%conv3_i_i_5_4410_loc = alloca i64 1"   --->   Operation 57 'alloca' 'conv3_i_i_5_4410_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%conv3_i_i_5_5413_loc = alloca i64 1"   --->   Operation 58 'alloca' 'conv3_i_i_5_5413_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%conv3_i_i_5_6416_loc = alloca i64 1"   --->   Operation 59 'alloca' 'conv3_i_i_5_6416_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%conv3_i_i_5_7419_loc = alloca i64 1"   --->   Operation 60 'alloca' 'conv3_i_i_5_7419_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%conv3_i_i_6421_loc = alloca i64 1"   --->   Operation 61 'alloca' 'conv3_i_i_6421_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%conv3_i_i_6_1424_loc = alloca i64 1"   --->   Operation 62 'alloca' 'conv3_i_i_6_1424_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%conv3_i_i_6_2427_loc = alloca i64 1"   --->   Operation 63 'alloca' 'conv3_i_i_6_2427_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%conv3_i_i_6_3430_loc = alloca i64 1"   --->   Operation 64 'alloca' 'conv3_i_i_6_3430_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%conv3_i_i_6_4433_loc = alloca i64 1"   --->   Operation 65 'alloca' 'conv3_i_i_6_4433_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%conv3_i_i_6_5436_loc = alloca i64 1"   --->   Operation 66 'alloca' 'conv3_i_i_6_5436_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%conv3_i_i_6_6439_loc = alloca i64 1"   --->   Operation 67 'alloca' 'conv3_i_i_6_6439_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%conv3_i_i_6_7442_loc = alloca i64 1"   --->   Operation 68 'alloca' 'conv3_i_i_6_7442_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%conv3_i_i_7444_loc = alloca i64 1"   --->   Operation 69 'alloca' 'conv3_i_i_7444_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%conv3_i_i_7_1447_loc = alloca i64 1"   --->   Operation 70 'alloca' 'conv3_i_i_7_1447_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%conv3_i_i_7_2450_loc = alloca i64 1"   --->   Operation 71 'alloca' 'conv3_i_i_7_2450_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%conv3_i_i_7_3453_loc = alloca i64 1"   --->   Operation 72 'alloca' 'conv3_i_i_7_3453_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%conv3_i_i_7_4456_loc = alloca i64 1"   --->   Operation 73 'alloca' 'conv3_i_i_7_4456_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%conv3_i_i_7_5459_loc = alloca i64 1"   --->   Operation 74 'alloca' 'conv3_i_i_7_5459_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%conv3_i_i_7_6462_loc = alloca i64 1"   --->   Operation 75 'alloca' 'conv3_i_i_7_6462_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%conv3_i_i_7_7465_loc = alloca i64 1"   --->   Operation 76 'alloca' 'conv3_i_i_7_7465_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 77 [2/2] (0.00ns)   --->   "%call_ln0 = call void @systolic_array_kernel_Pipeline_CYCLE, i16 %gmem1, i16 %gmem0, i64 %A_read, i64 %B_read, i16 %conv3_i_i_7_7465_loc, i16 %conv3_i_i_7_6462_loc, i16 %conv3_i_i_7_5459_loc, i16 %conv3_i_i_7_4456_loc, i16 %conv3_i_i_7_3453_loc, i16 %conv3_i_i_7_2450_loc, i16 %conv3_i_i_7_1447_loc, i16 %conv3_i_i_7444_loc, i16 %conv3_i_i_6_7442_loc, i16 %conv3_i_i_6_6439_loc, i16 %conv3_i_i_6_5436_loc, i16 %conv3_i_i_6_4433_loc, i16 %conv3_i_i_6_3430_loc, i16 %conv3_i_i_6_2427_loc, i16 %conv3_i_i_6_1424_loc, i16 %conv3_i_i_6421_loc, i16 %conv3_i_i_5_7419_loc, i16 %conv3_i_i_5_6416_loc, i16 %conv3_i_i_5_5413_loc, i16 %conv3_i_i_5_4410_loc, i16 %conv3_i_i_5_3407_loc, i16 %conv3_i_i_5_2404_loc, i16 %conv3_i_i_5_1401_loc, i16 %conv3_i_i_5398_loc, i16 %conv3_i_i_4_7396_loc, i16 %conv3_i_i_4_6393_loc, i16 %conv3_i_i_4_5390_loc, i16 %conv3_i_i_4_4387_loc, i16 %conv3_i_i_4_3384_loc, i16 %conv3_i_i_4_2381_loc, i16 %conv3_i_i_4_1378_loc, i16 %conv3_i_i_4375_loc, i16 %conv3_i_i_3_7373_loc, i16 %conv3_i_i_3_6370_loc, i16 %conv3_i_i_3_5367_loc, i16 %conv3_i_i_3_4364_loc, i16 %conv3_i_i_3_3361_loc, i16 %conv3_i_i_3_2358_loc, i16 %conv3_i_i_3_1355_loc, i16 %conv3_i_i_3352_loc, i16 %conv3_i_i_2_7350_loc, i16 %conv3_i_i_2_6347_loc, i16 %conv3_i_i_2_5344_loc, i16 %conv3_i_i_2_4341_loc, i16 %conv3_i_i_2_3338_loc, i16 %conv3_i_i_2_2335_loc, i16 %conv3_i_i_2_1332_loc, i16 %conv3_i_i_2329_loc, i16 %conv3_i_i_1_7327_loc, i16 %conv3_i_i_1_6324_loc, i16 %conv3_i_i_1_5321_loc, i16 %conv3_i_i_1_4318_loc, i16 %conv3_i_i_1_3315_loc, i16 %conv3_i_i_1_2312_loc, i16 %conv3_i_i_1_1309_loc, i16 %conv3_i_i_1306_loc, i16 %conv3_i_i_7219304_loc, i16 %conv3_i_i_6209302_loc, i16 %conv3_i_i_5199300_loc, i16 %conv3_i_i_4189298_loc, i16 %conv3_i_i_3179296_loc, i16 %conv3_i_i_2169294_loc, i16 %conv3_i_i_1159292_loc, i16 %conv3_i_i290_loc"   --->   Operation 77 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %C_read, i32 1, i32 63" [systolic.cpp:160]   --->   Operation 78 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 7.30>
+ST_2 : Operation 79 [1/2] (0.00ns)   --->   "%call_ln0 = call void @systolic_array_kernel_Pipeline_CYCLE, i16 %gmem1, i16 %gmem0, i64 %A_read, i64 %B_read, i16 %conv3_i_i_7_7465_loc, i16 %conv3_i_i_7_6462_loc, i16 %conv3_i_i_7_5459_loc, i16 %conv3_i_i_7_4456_loc, i16 %conv3_i_i_7_3453_loc, i16 %conv3_i_i_7_2450_loc, i16 %conv3_i_i_7_1447_loc, i16 %conv3_i_i_7444_loc, i16 %conv3_i_i_6_7442_loc, i16 %conv3_i_i_6_6439_loc, i16 %conv3_i_i_6_5436_loc, i16 %conv3_i_i_6_4433_loc, i16 %conv3_i_i_6_3430_loc, i16 %conv3_i_i_6_2427_loc, i16 %conv3_i_i_6_1424_loc, i16 %conv3_i_i_6421_loc, i16 %conv3_i_i_5_7419_loc, i16 %conv3_i_i_5_6416_loc, i16 %conv3_i_i_5_5413_loc, i16 %conv3_i_i_5_4410_loc, i16 %conv3_i_i_5_3407_loc, i16 %conv3_i_i_5_2404_loc, i16 %conv3_i_i_5_1401_loc, i16 %conv3_i_i_5398_loc, i16 %conv3_i_i_4_7396_loc, i16 %conv3_i_i_4_6393_loc, i16 %conv3_i_i_4_5390_loc, i16 %conv3_i_i_4_4387_loc, i16 %conv3_i_i_4_3384_loc, i16 %conv3_i_i_4_2381_loc, i16 %conv3_i_i_4_1378_loc, i16 %conv3_i_i_4375_loc, i16 %conv3_i_i_3_7373_loc, i16 %conv3_i_i_3_6370_loc, i16 %conv3_i_i_3_5367_loc, i16 %conv3_i_i_3_4364_loc, i16 %conv3_i_i_3_3361_loc, i16 %conv3_i_i_3_2358_loc, i16 %conv3_i_i_3_1355_loc, i16 %conv3_i_i_3352_loc, i16 %conv3_i_i_2_7350_loc, i16 %conv3_i_i_2_6347_loc, i16 %conv3_i_i_2_5344_loc, i16 %conv3_i_i_2_4341_loc, i16 %conv3_i_i_2_3338_loc, i16 %conv3_i_i_2_2335_loc, i16 %conv3_i_i_2_1332_loc, i16 %conv3_i_i_2329_loc, i16 %conv3_i_i_1_7327_loc, i16 %conv3_i_i_1_6324_loc, i16 %conv3_i_i_1_5321_loc, i16 %conv3_i_i_1_4318_loc, i16 %conv3_i_i_1_3315_loc, i16 %conv3_i_i_1_2312_loc, i16 %conv3_i_i_1_1309_loc, i16 %conv3_i_i_1306_loc, i16 %conv3_i_i_7219304_loc, i16 %conv3_i_i_6209302_loc, i16 %conv3_i_i_5199300_loc, i16 %conv3_i_i_4189298_loc, i16 %conv3_i_i_3179296_loc, i16 %conv3_i_i_2169294_loc, i16 %conv3_i_i_1159292_loc, i16 %conv3_i_i290_loc"   --->   Operation 79 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 80 [1/1] (0.00ns)   --->   "%sext_ln160 = sext i63 %trunc_ln" [systolic.cpp:160]   --->   Operation 80 'sext' 'sext_ln160' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 81 [1/1] (0.00ns)   --->   "%gmem2_addr = getelementptr i16 %gmem2, i64 %sext_ln160" [systolic.cpp:160]   --->   Operation 81 'getelementptr' 'gmem2_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 82 [1/1] (7.30ns)   --->   "%empty = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i16, i16 %gmem2_addr, i64 64" [systolic.cpp:160]   --->   Operation 82 'writereq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 9> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 83 [1/1] (0.00ns)   --->   "%conv3_i_i_7_7465_loc_load = load i16 %conv3_i_i_7_7465_loc"   --->   Operation 83 'load' 'conv3_i_i_7_7465_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 84 [1/1] (0.00ns)   --->   "%conv3_i_i_7_6462_loc_load = load i16 %conv3_i_i_7_6462_loc"   --->   Operation 84 'load' 'conv3_i_i_7_6462_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 85 [1/1] (0.00ns)   --->   "%conv3_i_i_7_5459_loc_load = load i16 %conv3_i_i_7_5459_loc"   --->   Operation 85 'load' 'conv3_i_i_7_5459_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 86 [1/1] (0.00ns)   --->   "%conv3_i_i_7_4456_loc_load = load i16 %conv3_i_i_7_4456_loc"   --->   Operation 86 'load' 'conv3_i_i_7_4456_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 87 [1/1] (0.00ns)   --->   "%conv3_i_i_7_3453_loc_load = load i16 %conv3_i_i_7_3453_loc"   --->   Operation 87 'load' 'conv3_i_i_7_3453_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 88 [1/1] (0.00ns)   --->   "%conv3_i_i_7_2450_loc_load = load i16 %conv3_i_i_7_2450_loc"   --->   Operation 88 'load' 'conv3_i_i_7_2450_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 89 [1/1] (0.00ns)   --->   "%conv3_i_i_7_1447_loc_load = load i16 %conv3_i_i_7_1447_loc"   --->   Operation 89 'load' 'conv3_i_i_7_1447_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 90 [1/1] (0.00ns)   --->   "%conv3_i_i_7444_loc_load = load i16 %conv3_i_i_7444_loc"   --->   Operation 90 'load' 'conv3_i_i_7444_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 91 [1/1] (0.00ns)   --->   "%conv3_i_i_6_7442_loc_load = load i16 %conv3_i_i_6_7442_loc"   --->   Operation 91 'load' 'conv3_i_i_6_7442_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 92 [1/1] (0.00ns)   --->   "%conv3_i_i_6_6439_loc_load = load i16 %conv3_i_i_6_6439_loc"   --->   Operation 92 'load' 'conv3_i_i_6_6439_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 93 [1/1] (0.00ns)   --->   "%conv3_i_i_6_5436_loc_load = load i16 %conv3_i_i_6_5436_loc"   --->   Operation 93 'load' 'conv3_i_i_6_5436_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 94 [1/1] (0.00ns)   --->   "%conv3_i_i_6_4433_loc_load = load i16 %conv3_i_i_6_4433_loc"   --->   Operation 94 'load' 'conv3_i_i_6_4433_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 95 [1/1] (0.00ns)   --->   "%conv3_i_i_6_3430_loc_load = load i16 %conv3_i_i_6_3430_loc"   --->   Operation 95 'load' 'conv3_i_i_6_3430_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 96 [1/1] (0.00ns)   --->   "%conv3_i_i_6_2427_loc_load = load i16 %conv3_i_i_6_2427_loc"   --->   Operation 96 'load' 'conv3_i_i_6_2427_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 97 [1/1] (0.00ns)   --->   "%conv3_i_i_6_1424_loc_load = load i16 %conv3_i_i_6_1424_loc"   --->   Operation 97 'load' 'conv3_i_i_6_1424_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 98 [1/1] (0.00ns)   --->   "%conv3_i_i_6421_loc_load = load i16 %conv3_i_i_6421_loc"   --->   Operation 98 'load' 'conv3_i_i_6421_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 99 [1/1] (0.00ns)   --->   "%conv3_i_i_5_7419_loc_load = load i16 %conv3_i_i_5_7419_loc"   --->   Operation 99 'load' 'conv3_i_i_5_7419_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 100 [1/1] (0.00ns)   --->   "%conv3_i_i_5_6416_loc_load = load i16 %conv3_i_i_5_6416_loc"   --->   Operation 100 'load' 'conv3_i_i_5_6416_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 101 [1/1] (0.00ns)   --->   "%conv3_i_i_5_5413_loc_load = load i16 %conv3_i_i_5_5413_loc"   --->   Operation 101 'load' 'conv3_i_i_5_5413_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 102 [1/1] (0.00ns)   --->   "%conv3_i_i_5_4410_loc_load = load i16 %conv3_i_i_5_4410_loc"   --->   Operation 102 'load' 'conv3_i_i_5_4410_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 103 [1/1] (0.00ns)   --->   "%conv3_i_i_5_3407_loc_load = load i16 %conv3_i_i_5_3407_loc"   --->   Operation 103 'load' 'conv3_i_i_5_3407_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 104 [1/1] (0.00ns)   --->   "%conv3_i_i_5_2404_loc_load = load i16 %conv3_i_i_5_2404_loc"   --->   Operation 104 'load' 'conv3_i_i_5_2404_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 105 [1/1] (0.00ns)   --->   "%conv3_i_i_5_1401_loc_load = load i16 %conv3_i_i_5_1401_loc"   --->   Operation 105 'load' 'conv3_i_i_5_1401_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 106 [1/1] (0.00ns)   --->   "%conv3_i_i_5398_loc_load = load i16 %conv3_i_i_5398_loc"   --->   Operation 106 'load' 'conv3_i_i_5398_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 107 [1/1] (0.00ns)   --->   "%conv3_i_i_4_7396_loc_load = load i16 %conv3_i_i_4_7396_loc"   --->   Operation 107 'load' 'conv3_i_i_4_7396_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 108 [1/1] (0.00ns)   --->   "%conv3_i_i_4_6393_loc_load = load i16 %conv3_i_i_4_6393_loc"   --->   Operation 108 'load' 'conv3_i_i_4_6393_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 109 [1/1] (0.00ns)   --->   "%conv3_i_i_4_5390_loc_load = load i16 %conv3_i_i_4_5390_loc"   --->   Operation 109 'load' 'conv3_i_i_4_5390_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 110 [1/1] (0.00ns)   --->   "%conv3_i_i_4_4387_loc_load = load i16 %conv3_i_i_4_4387_loc"   --->   Operation 110 'load' 'conv3_i_i_4_4387_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 111 [1/1] (0.00ns)   --->   "%conv3_i_i_4_3384_loc_load = load i16 %conv3_i_i_4_3384_loc"   --->   Operation 111 'load' 'conv3_i_i_4_3384_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 112 [1/1] (0.00ns)   --->   "%conv3_i_i_4_2381_loc_load = load i16 %conv3_i_i_4_2381_loc"   --->   Operation 112 'load' 'conv3_i_i_4_2381_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 113 [1/1] (0.00ns)   --->   "%conv3_i_i_4_1378_loc_load = load i16 %conv3_i_i_4_1378_loc"   --->   Operation 113 'load' 'conv3_i_i_4_1378_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 114 [1/1] (0.00ns)   --->   "%conv3_i_i_4375_loc_load = load i16 %conv3_i_i_4375_loc"   --->   Operation 114 'load' 'conv3_i_i_4375_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 115 [1/1] (0.00ns)   --->   "%conv3_i_i_3_7373_loc_load = load i16 %conv3_i_i_3_7373_loc"   --->   Operation 115 'load' 'conv3_i_i_3_7373_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 116 [1/1] (0.00ns)   --->   "%conv3_i_i_3_6370_loc_load = load i16 %conv3_i_i_3_6370_loc"   --->   Operation 116 'load' 'conv3_i_i_3_6370_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 117 [1/1] (0.00ns)   --->   "%conv3_i_i_3_5367_loc_load = load i16 %conv3_i_i_3_5367_loc"   --->   Operation 117 'load' 'conv3_i_i_3_5367_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 118 [1/1] (0.00ns)   --->   "%conv3_i_i_3_4364_loc_load = load i16 %conv3_i_i_3_4364_loc"   --->   Operation 118 'load' 'conv3_i_i_3_4364_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 119 [1/1] (0.00ns)   --->   "%conv3_i_i_3_3361_loc_load = load i16 %conv3_i_i_3_3361_loc"   --->   Operation 119 'load' 'conv3_i_i_3_3361_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 120 [1/1] (0.00ns)   --->   "%conv3_i_i_3_2358_loc_load = load i16 %conv3_i_i_3_2358_loc"   --->   Operation 120 'load' 'conv3_i_i_3_2358_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 121 [1/1] (0.00ns)   --->   "%conv3_i_i_3_1355_loc_load = load i16 %conv3_i_i_3_1355_loc"   --->   Operation 121 'load' 'conv3_i_i_3_1355_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 122 [1/1] (0.00ns)   --->   "%conv3_i_i_3352_loc_load = load i16 %conv3_i_i_3352_loc"   --->   Operation 122 'load' 'conv3_i_i_3352_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 123 [1/1] (0.00ns)   --->   "%conv3_i_i_2_7350_loc_load = load i16 %conv3_i_i_2_7350_loc"   --->   Operation 123 'load' 'conv3_i_i_2_7350_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 124 [1/1] (0.00ns)   --->   "%conv3_i_i_2_6347_loc_load = load i16 %conv3_i_i_2_6347_loc"   --->   Operation 124 'load' 'conv3_i_i_2_6347_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 125 [1/1] (0.00ns)   --->   "%conv3_i_i_2_5344_loc_load = load i16 %conv3_i_i_2_5344_loc"   --->   Operation 125 'load' 'conv3_i_i_2_5344_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 126 [1/1] (0.00ns)   --->   "%conv3_i_i_2_4341_loc_load = load i16 %conv3_i_i_2_4341_loc"   --->   Operation 126 'load' 'conv3_i_i_2_4341_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 127 [1/1] (0.00ns)   --->   "%conv3_i_i_2_3338_loc_load = load i16 %conv3_i_i_2_3338_loc"   --->   Operation 127 'load' 'conv3_i_i_2_3338_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 128 [1/1] (0.00ns)   --->   "%conv3_i_i_2_2335_loc_load = load i16 %conv3_i_i_2_2335_loc"   --->   Operation 128 'load' 'conv3_i_i_2_2335_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 129 [1/1] (0.00ns)   --->   "%conv3_i_i_2_1332_loc_load = load i16 %conv3_i_i_2_1332_loc"   --->   Operation 129 'load' 'conv3_i_i_2_1332_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 130 [1/1] (0.00ns)   --->   "%conv3_i_i_2329_loc_load = load i16 %conv3_i_i_2329_loc"   --->   Operation 130 'load' 'conv3_i_i_2329_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 131 [1/1] (0.00ns)   --->   "%conv3_i_i_1_7327_loc_load = load i16 %conv3_i_i_1_7327_loc"   --->   Operation 131 'load' 'conv3_i_i_1_7327_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 132 [1/1] (0.00ns)   --->   "%conv3_i_i_1_6324_loc_load = load i16 %conv3_i_i_1_6324_loc"   --->   Operation 132 'load' 'conv3_i_i_1_6324_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 133 [1/1] (0.00ns)   --->   "%conv3_i_i_1_5321_loc_load = load i16 %conv3_i_i_1_5321_loc"   --->   Operation 133 'load' 'conv3_i_i_1_5321_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 134 [1/1] (0.00ns)   --->   "%conv3_i_i_1_4318_loc_load = load i16 %conv3_i_i_1_4318_loc"   --->   Operation 134 'load' 'conv3_i_i_1_4318_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 135 [1/1] (0.00ns)   --->   "%conv3_i_i_1_3315_loc_load = load i16 %conv3_i_i_1_3315_loc"   --->   Operation 135 'load' 'conv3_i_i_1_3315_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 136 [1/1] (0.00ns)   --->   "%conv3_i_i_1_2312_loc_load = load i16 %conv3_i_i_1_2312_loc"   --->   Operation 136 'load' 'conv3_i_i_1_2312_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 137 [1/1] (0.00ns)   --->   "%conv3_i_i_1_1309_loc_load = load i16 %conv3_i_i_1_1309_loc"   --->   Operation 137 'load' 'conv3_i_i_1_1309_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 138 [1/1] (0.00ns)   --->   "%conv3_i_i_1306_loc_load = load i16 %conv3_i_i_1306_loc"   --->   Operation 138 'load' 'conv3_i_i_1306_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 139 [1/1] (0.00ns)   --->   "%conv3_i_i_7219304_loc_load = load i16 %conv3_i_i_7219304_loc"   --->   Operation 139 'load' 'conv3_i_i_7219304_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 140 [1/1] (0.00ns)   --->   "%conv3_i_i_6209302_loc_load = load i16 %conv3_i_i_6209302_loc"   --->   Operation 140 'load' 'conv3_i_i_6209302_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 141 [1/1] (0.00ns)   --->   "%conv3_i_i_5199300_loc_load = load i16 %conv3_i_i_5199300_loc"   --->   Operation 141 'load' 'conv3_i_i_5199300_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 142 [1/1] (0.00ns)   --->   "%conv3_i_i_4189298_loc_load = load i16 %conv3_i_i_4189298_loc"   --->   Operation 142 'load' 'conv3_i_i_4189298_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 143 [1/1] (0.00ns)   --->   "%conv3_i_i_3179296_loc_load = load i16 %conv3_i_i_3179296_loc"   --->   Operation 143 'load' 'conv3_i_i_3179296_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 144 [1/1] (0.00ns)   --->   "%conv3_i_i_2169294_loc_load = load i16 %conv3_i_i_2169294_loc"   --->   Operation 144 'load' 'conv3_i_i_2169294_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 145 [1/1] (0.00ns)   --->   "%conv3_i_i_1159292_loc_load = load i16 %conv3_i_i_1159292_loc"   --->   Operation 145 'load' 'conv3_i_i_1159292_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 146 [1/1] (0.00ns)   --->   "%conv3_i_i290_loc_load = load i16 %conv3_i_i290_loc"   --->   Operation 146 'load' 'conv3_i_i290_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 147 [2/2] (0.00ns)   --->   "%call_ln160 = call void @systolic_array_kernel_Pipeline_EXTRACT_I_EXTRACT_J, i16 %gmem2, i63 %trunc_ln, i16 %conv3_i_i290_loc_load, i16 %conv3_i_i_1159292_loc_load, i16 %conv3_i_i_2169294_loc_load, i16 %conv3_i_i_3179296_loc_load, i16 %conv3_i_i_4189298_loc_load, i16 %conv3_i_i_5199300_loc_load, i16 %conv3_i_i_6209302_loc_load, i16 %conv3_i_i_7219304_loc_load, i16 %conv3_i_i_1306_loc_load, i16 %conv3_i_i_1_1309_loc_load, i16 %conv3_i_i_1_2312_loc_load, i16 %conv3_i_i_1_3315_loc_load, i16 %conv3_i_i_1_4318_loc_load, i16 %conv3_i_i_1_5321_loc_load, i16 %conv3_i_i_1_6324_loc_load, i16 %conv3_i_i_1_7327_loc_load, i16 %conv3_i_i_2329_loc_load, i16 %conv3_i_i_2_1332_loc_load, i16 %conv3_i_i_2_2335_loc_load, i16 %conv3_i_i_2_3338_loc_load, i16 %conv3_i_i_2_4341_loc_load, i16 %conv3_i_i_2_5344_loc_load, i16 %conv3_i_i_2_6347_loc_load, i16 %conv3_i_i_2_7350_loc_load, i16 %conv3_i_i_3352_loc_load, i16 %conv3_i_i_3_1355_loc_load, i16 %conv3_i_i_3_2358_loc_load, i16 %conv3_i_i_3_3361_loc_load, i16 %conv3_i_i_3_4364_loc_load, i16 %conv3_i_i_3_5367_loc_load, i16 %conv3_i_i_3_6370_loc_load, i16 %conv3_i_i_3_7373_loc_load, i16 %conv3_i_i_4375_loc_load, i16 %conv3_i_i_4_1378_loc_load, i16 %conv3_i_i_4_2381_loc_load, i16 %conv3_i_i_4_3384_loc_load, i16 %conv3_i_i_4_4387_loc_load, i16 %conv3_i_i_4_5390_loc_load, i16 %conv3_i_i_4_6393_loc_load, i16 %conv3_i_i_4_7396_loc_load, i16 %conv3_i_i_5398_loc_load, i16 %conv3_i_i_5_1401_loc_load, i16 %conv3_i_i_5_2404_loc_load, i16 %conv3_i_i_5_3407_loc_load, i16 %conv3_i_i_5_4410_loc_load, i16 %conv3_i_i_5_5413_loc_load, i16 %conv3_i_i_5_6416_loc_load, i16 %conv3_i_i_5_7419_loc_load, i16 %conv3_i_i_6421_loc_load, i16 %conv3_i_i_6_1424_loc_load, i16 %conv3_i_i_6_2427_loc_load, i16 %conv3_i_i_6_3430_loc_load, i16 %conv3_i_i_6_4433_loc_load, i16 %conv3_i_i_6_5436_loc_load, i16 %conv3_i_i_6_6439_loc_load, i16 %conv3_i_i_6_7442_loc_load, i16 %conv3_i_i_7444_loc_load, i16 %conv3_i_i_7_1447_loc_load, i16 %conv3_i_i_7_2450_loc_load, i16 %conv3_i_i_7_3453_loc_load, i16 %conv3_i_i_7_4456_loc_load, i16 %conv3_i_i_7_5459_loc_load, i16 %conv3_i_i_7_6462_loc_load, i16 %conv3_i_i_7_7465_loc_load" [systolic.cpp:160]   --->   Operation 147 'call' 'call_ln160' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 148 [1/2] (0.00ns)   --->   "%call_ln160 = call void @systolic_array_kernel_Pipeline_EXTRACT_I_EXTRACT_J, i16 %gmem2, i63 %trunc_ln, i16 %conv3_i_i290_loc_load, i16 %conv3_i_i_1159292_loc_load, i16 %conv3_i_i_2169294_loc_load, i16 %conv3_i_i_3179296_loc_load, i16 %conv3_i_i_4189298_loc_load, i16 %conv3_i_i_5199300_loc_load, i16 %conv3_i_i_6209302_loc_load, i16 %conv3_i_i_7219304_loc_load, i16 %conv3_i_i_1306_loc_load, i16 %conv3_i_i_1_1309_loc_load, i16 %conv3_i_i_1_2312_loc_load, i16 %conv3_i_i_1_3315_loc_load, i16 %conv3_i_i_1_4318_loc_load, i16 %conv3_i_i_1_5321_loc_load, i16 %conv3_i_i_1_6324_loc_load, i16 %conv3_i_i_1_7327_loc_load, i16 %conv3_i_i_2329_loc_load, i16 %conv3_i_i_2_1332_loc_load, i16 %conv3_i_i_2_2335_loc_load, i16 %conv3_i_i_2_3338_loc_load, i16 %conv3_i_i_2_4341_loc_load, i16 %conv3_i_i_2_5344_loc_load, i16 %conv3_i_i_2_6347_loc_load, i16 %conv3_i_i_2_7350_loc_load, i16 %conv3_i_i_3352_loc_load, i16 %conv3_i_i_3_1355_loc_load, i16 %conv3_i_i_3_2358_loc_load, i16 %conv3_i_i_3_3361_loc_load, i16 %conv3_i_i_3_4364_loc_load, i16 %conv3_i_i_3_5367_loc_load, i16 %conv3_i_i_3_6370_loc_load, i16 %conv3_i_i_3_7373_loc_load, i16 %conv3_i_i_4375_loc_load, i16 %conv3_i_i_4_1378_loc_load, i16 %conv3_i_i_4_2381_loc_load, i16 %conv3_i_i_4_3384_loc_load, i16 %conv3_i_i_4_4387_loc_load, i16 %conv3_i_i_4_5390_loc_load, i16 %conv3_i_i_4_6393_loc_load, i16 %conv3_i_i_4_7396_loc_load, i16 %conv3_i_i_5398_loc_load, i16 %conv3_i_i_5_1401_loc_load, i16 %conv3_i_i_5_2404_loc_load, i16 %conv3_i_i_5_3407_loc_load, i16 %conv3_i_i_5_4410_loc_load, i16 %conv3_i_i_5_5413_loc_load, i16 %conv3_i_i_5_6416_loc_load, i16 %conv3_i_i_5_7419_loc_load, i16 %conv3_i_i_6421_loc_load, i16 %conv3_i_i_6_1424_loc_load, i16 %conv3_i_i_6_2427_loc_load, i16 %conv3_i_i_6_3430_loc_load, i16 %conv3_i_i_6_4433_loc_load, i16 %conv3_i_i_6_5436_loc_load, i16 %conv3_i_i_6_6439_loc_load, i16 %conv3_i_i_6_7442_loc_load, i16 %conv3_i_i_7444_loc_load, i16 %conv3_i_i_7_1447_loc_load, i16 %conv3_i_i_7_2450_loc_load, i16 %conv3_i_i_7_3453_loc_load, i16 %conv3_i_i_7_4456_loc_load, i16 %conv3_i_i_7_5459_loc_load, i16 %conv3_i_i_7_6462_loc_load, i16 %conv3_i_i_7_7465_loc_load" [systolic.cpp:160]   --->   Operation 148 'call' 'call_ln160' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 7.30>
+ST_5 : Operation 149 [5/5] (7.30ns)   --->   "%empty_23 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i16, i16 %gmem2_addr" [systolic.cpp:166]   --->   Operation 149 'writeresp' 'empty_23' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 7.30>
+ST_6 : Operation 150 [4/5] (7.30ns)   --->   "%empty_23 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i16, i16 %gmem2_addr" [systolic.cpp:166]   --->   Operation 150 'writeresp' 'empty_23' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 7.30>
+ST_7 : Operation 151 [3/5] (7.30ns)   --->   "%empty_23 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i16, i16 %gmem2_addr" [systolic.cpp:166]   --->   Operation 151 'writeresp' 'empty_23' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 7.30>
+ST_8 : Operation 152 [2/5] (7.30ns)   --->   "%empty_23 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i16, i16 %gmem2_addr" [systolic.cpp:166]   --->   Operation 152 'writeresp' 'empty_23' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 9 <SV = 8> <Delay = 7.30>
+ST_9 : Operation 153 [1/1] (0.00ns)   --->   "%spectopmodule_ln11 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_12" [systolic.cpp:11]   --->   Operation 153 'spectopmodule' 'spectopmodule_ln11' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 154 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %gmem0, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 154 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 155 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %gmem0"   --->   Operation 155 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 156 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %gmem1, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_3, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 156 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 157 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %gmem1"   --->   Operation 157 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 158 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %gmem2, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_4, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 158 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 159 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %gmem2"   --->   Operation 159 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 160 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %A, void @empty_5, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_6, void @empty_7, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_8, i32 4294967295, i32 0, i32 0"   --->   Operation 160 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 161 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %A, void @empty_9, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_8, i32 4294967295, i32 0, i32 0"   --->   Operation 161 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 162 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %B, void @empty_5, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_6, void @empty_10, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_8, i32 4294967295, i32 0, i32 0"   --->   Operation 162 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 163 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %B, void @empty_9, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_8, i32 4294967295, i32 0, i32 0"   --->   Operation 163 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 164 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %C, void @empty_5, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_6, void @empty_11, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_8, i32 4294967295, i32 0, i32 0"   --->   Operation 164 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 165 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %C, void @empty_9, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_8, i32 4294967295, i32 0, i32 0"   --->   Operation 165 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 166 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_6, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 166 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 167 [1/5] (7.30ns)   --->   "%empty_23 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i16, i16 %gmem2_addr" [systolic.cpp:166]   --->   Operation 167 'writeresp' 'empty_23' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_9 : Operation 168 [1/1] (0.00ns)   --->   "%ret_ln166 = ret" [systolic.cpp:166]   --->   Operation 168 'ret' 'ret_ln166' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.000ns
+The critical path consists of the following:
+	s_axi read operation ('C_read') on port 'C' [7]  (1.000 ns)
+
+ <State 2>: 7.300ns
+The critical path consists of the following:
+	'getelementptr' operation 16 bit ('gmem2_addr', systolic.cpp:160) [155]  (0.000 ns)
+	bus request operation ('empty', systolic.cpp:160) on port 'gmem2' (systolic.cpp:160) [156]  (7.300 ns)
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('empty_23', systolic.cpp:166) on port 'gmem2' (systolic.cpp:166) [158]  (7.300 ns)
+
+ <State 6>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('empty_23', systolic.cpp:166) on port 'gmem2' (systolic.cpp:166) [158]  (7.300 ns)
+
+ <State 7>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('empty_23', systolic.cpp:166) on port 'gmem2' (systolic.cpp:166) [158]  (7.300 ns)
+
+ <State 8>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('empty_23', systolic.cpp:166) on port 'gmem2' (systolic.cpp:166) [158]  (7.300 ns)
+
+ <State 9>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('empty_23', systolic.cpp:166) on port 'gmem2' (systolic.cpp:166) [158]  (7.300 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

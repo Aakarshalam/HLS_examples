@@ -1,0 +1,191 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\sys_component.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/12/26 10:23:42",
+ "timestampMillis": "1770872022504",
+ "buildStep": {
+  "cmdId": "5496da83-f1b5-400e-b6eb-65cd4efadc11",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\logs\\sys_component.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --impl --config C:\\Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\hls_config.cfg --work_dir sys_component ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "C:\\Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\hls_config.cfg",
+   "--work_dir",
+   "sys_component"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\Nani\\workspace\\HLS_testing_3\\sys_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/12/26 10:23:42",
+ "timestampMillis": "1770872022508",
+ "status": {
+  "cmdId": "5496da83-f1b5-400e-b6eb-65cd4efadc11",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/12/26 10:23:51",
+ "timestampMillis": "1770872031367",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "systolic_array_kernel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\systolic.cpp",
+     "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\systolic.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/12/26 10:23:51",
+ "timestampMillis": "1770872031369",
+ "buildStep": {
+  "cmdId": "39c7a1b4-9f65-4ca5-ba0a-cfac24e2c1a5",
+  "name": "",
+  "logFile": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\Nani\\workspace\\HLS_testing_3\\sys_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/12/26 10:23:51",
+ "timestampMillis": "1770872031370",
+ "status": {
+  "cmdId": "39c7a1b4-9f65-4ca5-ba0a-cfac24e2c1a5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/12/26 10:23:51",
+ "timestampMillis": "1770872031372",
+ "report": {
+  "path": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/12/26 10:23:51",
+ "timestampMillis": "1770872031374",
+ "report": {
+  "path": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\hls\\impl\\report\\verilog\\export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/12/26 10:23:51",
+ "timestampMillis": "1770872031375",
+ "report": {
+  "path": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\hls\\impl\\report\\verilog\\export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/12/26 10:23:51",
+ "timestampMillis": "1770872031375",
+ "report": {
+  "path": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/12/26 10:23:51",
+ "timestampMillis": "1770872031376",
+ "report": {
+  "path": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\hls\\impl\\report\\verilog\\export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/12/26 10:23:51",
+ "timestampMillis": "1770872031377",
+ "report": {
+  "path": "C:/Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\sys_component\\hls\\impl\\report\\verilog\\export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

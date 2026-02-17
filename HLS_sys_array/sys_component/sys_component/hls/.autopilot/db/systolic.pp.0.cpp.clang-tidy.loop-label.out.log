@@ -1,0 +1,55 @@
+C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp:2258:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp:2258:5: note: FIX-IT applied suggested code changes
+C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp:2272:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp:2272:5: note: FIX-IT applied suggested code changes
+C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp:2286:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp:2286:5: note: FIX-IT applied suggested code changes
+C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp:4254:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1248_1: 
+C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp:4254:7: note: FIX-IT applied suggested code changes
+C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp:6288:9: warning: Added loop label VITIS_LOOP_41_1:   [xilinx-label-all-loops]
+        for (int j = 0; j < 8; j++) {
+        ^~~
+        VITIS_LOOP_41_1: 
+C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp:6288:9: note: FIX-IT applied suggested code changes
+C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp:6295:9: warning: Added loop label VITIS_LOOP_48_2:   [xilinx-label-all-loops]
+        for (int j = 0; j <= 8; j++) {
+        ^~~
+        VITIS_LOOP_48_2: 
+C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp:6295:9: note: FIX-IT applied suggested code changes
+C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp:6302:9: warning: Added loop label VITIS_LOOP_55_3:   [xilinx-label-all-loops]
+        for (int j = 0; j < 8; j++) {
+        ^~~
+        VITIS_LOOP_55_3: 
+C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp:6302:9: note: FIX-IT applied suggested code changes
+C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp:6360:13: warning: Added loop label VITIS_LOOP_113_4:   [xilinx-label-all-loops]
+            for (int j = 0; j <= 8; j++) {
+            ^~~
+            VITIS_LOOP_113_4: 
+C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp:6360:13: note: FIX-IT applied suggested code changes
+C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp:6367:13: warning: Added loop label VITIS_LOOP_120_5:   [xilinx-label-all-loops]
+            for (int j = 0; j < 8; j++) {
+            ^~~
+            VITIS_LOOP_120_5: 
+C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp:6367:13: note: FIX-IT applied suggested code changes
+C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp:6389:13: warning: Added loop label VITIS_LOOP_142_6:   [xilinx-label-all-loops]
+            for (int j = 1; j <= 8; j++) {
+            ^~~
+            VITIS_LOOP_142_6: 
+C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp:6389:13: note: FIX-IT applied suggested code changes
+C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp:6396:13: warning: Added loop label VITIS_LOOP_149_7:   [xilinx-label-all-loops]
+            for (int j = 0; j < 8; j++) {
+            ^~~
+            VITIS_LOOP_149_7: 
+C:\Users\Nani\workspace\HLS_testing_3\sys_component\sys_component\hls\.autopilot\db\systolic.pp.0.cpp:6396:13: note: FIX-IT applied suggested code changes

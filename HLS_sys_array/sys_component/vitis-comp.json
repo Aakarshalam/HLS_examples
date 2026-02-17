@@ -1,0 +1,13 @@
+{
+  "name": "sys_component",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "sys_component"
+  },
+  "useSysrootToolchain": false,
+  "template": "empty_hls_component"
+}

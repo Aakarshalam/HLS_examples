@@ -1,0 +1,33 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../testbench.cpp in debug mode
+   Compiling ../../../../systolic.cpp in debug mode
+   Generating csim.exe
+========================================
+Simple Systolic Array Testbench
+Array Size: 26x26
+========================================
+
+[Test 1] Simple pattern...
+  ✓ PASSED
+
+[Test 2] Identity matrix...
+  ✓ PASSED
+
+[Test 3] All ones...
+  ✓ PASSED
+  Result: C[0][0] = 26 (expected 26)
+
+[Test 4] Random values...
+  ✓ PASSED
+
+[Test 5] Zero matrix...
+  ✓ PASSED
+  Result: C[0][0] = 0 (expected 0)
+
+========================================
+Tests Passed: 5 / 5
+✓✓✓ ALL TESTS PASSED! ✓✓✓
+========================================
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

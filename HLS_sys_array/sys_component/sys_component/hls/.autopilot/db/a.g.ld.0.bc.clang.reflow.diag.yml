@@ -1,0 +1,1670 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: systolic.cpp, Line: 43, Column: 17 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'PE::reset()'
+    DebugLoc:        { File: ./systolic.h, Line: 20, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'systolic_array_kernel(ap_int<16> (*) [8], ap_int<16> (*) [8], ap_int<16> (*) [8])'
+    DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: systolic.cpp, Line: 163, Column: 27 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'PE::get_result()'
+    DebugLoc:        { File: ./systolic.h, Line: 36, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'systolic_array_kernel(ap_int<16> (*) [8], ap_int<16> (*) [8], ap_int<16> (*) [8])'
+    DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: systolic.cpp, Line: 131, Column: 17 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'PE::compute(ap_int<16>, ap_int<16>, ap_int<16>&, ap_int<16>&)'
+    DebugLoc:        { File: ./systolic.h, Line: 25, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'systolic_array_kernel(ap_int<16> (*) [8], ap_int<16> (*) [8], ap_int<16> (*) [8])'
+    DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic.cpp, Line: 75, Column: 11 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        INPUT_A
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic.cpp, Line: 88, Column: 18 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        INPUT_B
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic.cpp, Line: 112, Column: 15 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        INIT_A_TEMP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic.cpp, Line: 113, Column: 31 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_113_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic.cpp, Line: 119, Column: 22 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        INIT_B_TEMP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic.cpp, Line: 120, Column: 31 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_120_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic.cpp, Line: 127, Column: 20 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        COMPUTE_I
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic.cpp, Line: 128, Column: 24 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        COMPUTE_J
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic.cpp, Line: 141, Column: 20 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        FORWARD_A
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic.cpp, Line: 142, Column: 31 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_142_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic.cpp, Line: 148, Column: 20 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        FORWARD_B
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic.cpp, Line: 149, Column: 31 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_149_7
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        INPUT_A
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:75:11'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        INPUT_B
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:88:18'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        INIT_A_TEMP
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:112:15'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_113_4
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:113:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_113_4
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:113:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_113_4
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:113:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_113_4
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:113:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_113_4
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:113:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_113_4
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:113:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_113_4
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:113:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_113_4
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:113:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        INIT_B_TEMP
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:119:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_120_5
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:120:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_120_5
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:120:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_120_5
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:120:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_120_5
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:120:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_120_5
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:120:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_120_5
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:120:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_120_5
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:120:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_120_5
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:120:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_120_5
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:120:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COMPUTE_I
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:127:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COMPUTE_J
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:128:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COMPUTE_J
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:128:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COMPUTE_J
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:128:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COMPUTE_J
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:128:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COMPUTE_J
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:128:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COMPUTE_J
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:128:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COMPUTE_J
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:128:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COMPUTE_J
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:128:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        FORWARD_A
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:141:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_142_6
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:142:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_142_6
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:142:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_142_6
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:142:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_142_6
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:142:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_142_6
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:142:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_142_6
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:142:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_142_6
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:142:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_142_6
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:142:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        FORWARD_B
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:148:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_149_7
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:149:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_149_7
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:149:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_149_7
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:149:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_149_7
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:149:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_149_7
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:149:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_149_7
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:149:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_149_7
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:149:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_149_7
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:149:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_55_3
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:55:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_48_2
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:48:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_41_1
+  - String:          ''' ('
+  - LoopLoc:         'systolic.cpp:41:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_systolic_array_kernel_ir
+Args:            
+  - Callee:          'systolic_array_kernel(ap_int<16> (*) [8], ap_int<16> (*) [8], ap_int<16> (*) [8])'
+    DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_systolic_array_kernel_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: systolic.cpp, Line: 25, Column: 5 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          pe_array
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: systolic.cpp, Line: 31, Column: 9 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          a_data
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: systolic.cpp, Line: 34, Column: 9 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          b_data
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            C
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            B
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            A
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: systolic.cpp, Line: 160, Column: 16 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '64'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        C3seq
+  - ArrayName:       C
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        EXTRACT_I
+  - String:          ' '
+  - LoopLoc:         'systolic.cpp:160:16'
+  - String:          ' '
+  - Function:        'systolic_array_kernel(ap_int<16> (*) [8], ap_int<16> (*) [8], ap_int<16> (*) [8])'
+    DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: systolic.cpp, Line: 163, Column: 10 }
+  - OrigDirection:   write
+  - OrigID:          for.inc253.store.15
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessClobbered
+DebugLoc:        { File: systolic.cpp, Line: 81, Column: 30 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Access is clobbered by '
+  - ClobberedBy:     load
+    DebugLoc:        { File: systolic.cpp, Line: 81, Column: 30 }
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: systolic.cpp, Line: 81, Column: 30 }
+  - OrigDirection:   read
+  - OrigID:          if.then.load.1
+  - ArrayName:       A
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - Function:        'systolic_array_kernel(ap_int<16> (*) [8], ap_int<16> (*) [8], ap_int<16> (*) [8])'
+    DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: systolic.cpp, Line: 81, Column: 30 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: systolic.cpp, Line: 81, Column: 30 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: systolic.cpp, Line: 81, Column: 30 }
+  - OrigDirection:   read
+  - OrigID:          if.then.1.load.1
+  - ArrayName:       A
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        CYCLE
+  - String:          ' '
+  - LoopLoc:         'systolic.cpp:67:12'
+  - String:          ' '
+  - Function:        'systolic_array_kernel(ap_int<16> (*) [8], ap_int<16> (*) [8], ap_int<16> (*) [8])'
+    DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: systolic.cpp, Line: 81, Column: 30 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: systolic.cpp, Line: 81, Column: 30 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: systolic.cpp, Line: 81, Column: 30 }
+  - OrigDirection:   read
+  - OrigID:          if.then.2.load.1
+  - ArrayName:       A
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        CYCLE
+  - String:          ' '
+  - LoopLoc:         'systolic.cpp:67:12'
+  - String:          ' '
+  - Function:        'systolic_array_kernel(ap_int<16> (*) [8], ap_int<16> (*) [8], ap_int<16> (*) [8])'
+    DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: systolic.cpp, Line: 81, Column: 30 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: systolic.cpp, Line: 81, Column: 30 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: systolic.cpp, Line: 81, Column: 30 }
+  - OrigDirection:   read
+  - OrigID:          if.then.3.load.1
+  - ArrayName:       A
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        CYCLE
+  - String:          ' '
+  - LoopLoc:         'systolic.cpp:67:12'
+  - String:          ' '
+  - Function:        'systolic_array_kernel(ap_int<16> (*) [8], ap_int<16> (*) [8], ap_int<16> (*) [8])'
+    DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: systolic.cpp, Line: 81, Column: 30 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: systolic.cpp, Line: 81, Column: 30 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: systolic.cpp, Line: 81, Column: 30 }
+  - OrigDirection:   read
+  - OrigID:          if.then.4.load.1
+  - ArrayName:       A
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        CYCLE
+  - String:          ' '
+  - LoopLoc:         'systolic.cpp:67:12'
+  - String:          ' '
+  - Function:        'systolic_array_kernel(ap_int<16> (*) [8], ap_int<16> (*) [8], ap_int<16> (*) [8])'
+    DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: systolic.cpp, Line: 81, Column: 30 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: systolic.cpp, Line: 81, Column: 30 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: systolic.cpp, Line: 81, Column: 30 }
+  - OrigDirection:   read
+  - OrigID:          if.then.5.load.1
+  - ArrayName:       A
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        CYCLE
+  - String:          ' '
+  - LoopLoc:         'systolic.cpp:67:12'
+  - String:          ' '
+  - Function:        'systolic_array_kernel(ap_int<16> (*) [8], ap_int<16> (*) [8], ap_int<16> (*) [8])'
+    DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: systolic.cpp, Line: 81, Column: 30 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: systolic.cpp, Line: 81, Column: 30 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: systolic.cpp, Line: 81, Column: 30 }
+  - OrigDirection:   read
+  - OrigID:          if.then.6.load.1
+  - ArrayName:       A
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        CYCLE
+  - String:          ' '
+  - LoopLoc:         'systolic.cpp:67:12'
+  - String:          ' '
+  - Function:        'systolic_array_kernel(ap_int<16> (*) [8], ap_int<16> (*) [8], ap_int<16> (*) [8])'
+    DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: systolic.cpp, Line: 81, Column: 30 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: systolic.cpp, Line: 81, Column: 30 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: systolic.cpp, Line: 81, Column: 30 }
+  - OrigDirection:   read
+  - OrigID:          if.then.7.load.1
+  - ArrayName:       A
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        CYCLE
+  - String:          ' '
+  - LoopLoc:         'systolic.cpp:67:12'
+  - String:          ' '
+  - Function:        'systolic_array_kernel(ap_int<16> (*) [8], ap_int<16> (*) [8], ap_int<16> (*) [8])'
+    DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: systolic.cpp, Line: 94, Column: 30 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: systolic.cpp, Line: 94, Column: 30 }
+  - OrigDirection:   read
+  - OrigID:          if.then86.load.1
+  - ArrayName:       B
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        CYCLE
+  - String:          ' '
+  - LoopLoc:         'systolic.cpp:67:12'
+  - String:          ' '
+  - Function:        'systolic_array_kernel(ap_int<16> (*) [8], ap_int<16> (*) [8], ap_int<16> (*) [8])'
+    DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: systolic.cpp, Line: 94, Column: 30 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: systolic.cpp, Line: 94, Column: 30 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: systolic.cpp, Line: 94, Column: 30 }
+  - OrigDirection:   read
+  - OrigID:          if.then86.1.load.1
+  - ArrayName:       B
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        CYCLE
+  - String:          ' '
+  - LoopLoc:         'systolic.cpp:67:12'
+  - String:          ' '
+  - Function:        'systolic_array_kernel(ap_int<16> (*) [8], ap_int<16> (*) [8], ap_int<16> (*) [8])'
+    DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: systolic.cpp, Line: 94, Column: 30 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: systolic.cpp, Line: 94, Column: 30 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: systolic.cpp, Line: 94, Column: 30 }
+  - OrigDirection:   read
+  - OrigID:          if.then86.2.load.1
+  - ArrayName:       B
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        CYCLE
+  - String:          ' '
+  - LoopLoc:         'systolic.cpp:67:12'
+  - String:          ' '
+  - Function:        'systolic_array_kernel(ap_int<16> (*) [8], ap_int<16> (*) [8], ap_int<16> (*) [8])'
+    DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: systolic.cpp, Line: 94, Column: 30 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: systolic.cpp, Line: 94, Column: 30 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: systolic.cpp, Line: 94, Column: 30 }
+  - OrigDirection:   read
+  - OrigID:          if.then86.3.load.1
+  - ArrayName:       B
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        CYCLE
+  - String:          ' '
+  - LoopLoc:         'systolic.cpp:67:12'
+  - String:          ' '
+  - Function:        'systolic_array_kernel(ap_int<16> (*) [8], ap_int<16> (*) [8], ap_int<16> (*) [8])'
+    DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: systolic.cpp, Line: 94, Column: 30 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: systolic.cpp, Line: 94, Column: 30 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: systolic.cpp, Line: 94, Column: 30 }
+  - OrigDirection:   read
+  - OrigID:          if.then86.4.load.1
+  - ArrayName:       B
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        CYCLE
+  - String:          ' '
+  - LoopLoc:         'systolic.cpp:67:12'
+  - String:          ' '
+  - Function:        'systolic_array_kernel(ap_int<16> (*) [8], ap_int<16> (*) [8], ap_int<16> (*) [8])'
+    DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: systolic.cpp, Line: 94, Column: 30 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: systolic.cpp, Line: 94, Column: 30 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: systolic.cpp, Line: 94, Column: 30 }
+  - OrigDirection:   read
+  - OrigID:          if.then86.5.load.1
+  - ArrayName:       B
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        CYCLE
+  - String:          ' '
+  - LoopLoc:         'systolic.cpp:67:12'
+  - String:          ' '
+  - Function:        'systolic_array_kernel(ap_int<16> (*) [8], ap_int<16> (*) [8], ap_int<16> (*) [8])'
+    DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: systolic.cpp, Line: 94, Column: 30 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: systolic.cpp, Line: 94, Column: 30 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: systolic.cpp, Line: 94, Column: 30 }
+  - OrigDirection:   read
+  - OrigID:          if.then86.6.load.1
+  - ArrayName:       B
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        CYCLE
+  - String:          ' '
+  - LoopLoc:         'systolic.cpp:67:12'
+  - String:          ' '
+  - Function:        'systolic_array_kernel(ap_int<16> (*) [8], ap_int<16> (*) [8], ap_int<16> (*) [8])'
+    DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: systolic.cpp, Line: 94, Column: 30 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: systolic.cpp, Line: 94, Column: 30 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: systolic.cpp, Line: 94, Column: 30 }
+  - OrigDirection:   read
+  - OrigID:          if.then86.7.load.1
+  - ArrayName:       B
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        CYCLE
+  - String:          ' '
+  - LoopLoc:         'systolic.cpp:67:12'
+  - String:          ' '
+  - Function:        'systolic_array_kernel(ap_int<16> (*) [8], ap_int<16> (*) [8], ap_int<16> (*) [8])'
+    DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: systolic.cpp, Line: 160, Column: 16 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i16
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: systolic.cpp, Line: 160, Column: 16 }
+  - OrigDirection:   write
+  - OrigID:          C3seq
+  - ArrayName:       C
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        EXTRACT_J
+  - String:          ' '
+  - LoopLoc:         'systolic.cpp:161:20'
+  - String:          ' '
+  - Function:        'systolic_array_kernel(ap_int<16> (*) [8], ap_int<16> (*) [8], ap_int<16> (*) [8])'
+    DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        INIT_PE
+  - String:          '> at '
+  - LoopLoc:         'systolic.cpp:40:11'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        INIT_A
+  - String:          '> at '
+  - LoopLoc:         'systolic.cpp:47:13'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        INIT_B
+  - String:          '> at '
+  - LoopLoc:         'systolic.cpp:54:13'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: systolic.cpp, Line: 160, Column: 16 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '64'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        EXTRACT_I
+  - String:          ' '
+  - LoopLoc:         'systolic.cpp:160:16'
+  - String:          ' '
+  - Function:        'systolic_array_kernel(ap_int<16> (*) [8], ap_int<16> (*) [8], ap_int<16> (*) [8])'
+    DebugLoc:        { File: systolic.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: systolic.cpp, Line: 160, Column: 16 }
+Function:        _Z21systolic_array_kernelPA8_6ap_intILi16EES2_S2_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '64'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' in loop '''
+  - LoopName:        EXTRACT_I
+  - String:          '''('
+  - LoopLoc:         'systolic.cpp:160:16'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem2
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

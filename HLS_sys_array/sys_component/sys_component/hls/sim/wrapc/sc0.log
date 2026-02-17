@@ -1,0 +1,6 @@
+   Build using "C:/Xilinx/2025.1/Vitis/win64/tools/vcxx/libexec/clang++"
+   Compiling systolic.cpp_pre.cpp.tb.cpp
+   Compiling apatb_systolic_array_kernel.cpp
+   Compiling testbench.cpp_pre.cpp.tb.cpp
+   Compiling apatb_systolic_array_kernel_ir.ll
+   Generating cosim.tv.exe

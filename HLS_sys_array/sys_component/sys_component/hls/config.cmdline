@@ -1,0 +1,3 @@
+relativeroot=C:/Users/Nani/workspace/HLS_testing_3/sys_component
+original_argv=--mode hls --csim --config C:\Users\Nani\workspace\HLS_testing_3\sys_component\hls_config.cfg --work_dir sys_component 
+

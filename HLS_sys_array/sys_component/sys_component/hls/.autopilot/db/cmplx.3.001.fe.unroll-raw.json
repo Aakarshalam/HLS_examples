@@ -1,0 +1,22 @@
+{
+  "0": {
+    "basicblocks": 138,
+    "calls": "",
+    "control_depth": 3,
+    "def_use_depth": 4,
+    "file": "systolic.cpp",
+    "fileloc": 11,
+    "instructions": 2027,
+    "loads": {
+      "L": 321,
+      "T": 16
+    },
+    "memory_accesses": 859,
+    "name": "systolic_array_kernel",
+    "stores": {
+      "L": 521,
+      "T": 1
+    },
+    "total_instructions": 2027
+  }
+}

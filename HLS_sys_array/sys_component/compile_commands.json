@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "C:\\Users\\Nani\\workspace\\HLS_testing_3\\sys_component",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=systolic_array_kernel",
+      "-c",
+      "C:\\Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\systolic.cpp"
+    ],
+    "file": "C:\\Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\systolic.cpp"
+  },
+  {
+    "directory": "C:\\Users\\Nani\\workspace\\HLS_testing_3\\sys_component",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\include",
+      "-c",
+      "C:\\Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\testbench.cpp"
+    ],
+    "file": "C:\\Users\\Nani\\workspace\\HLS_testing_3\\sys_component\\testbench.cpp"
+  }
+]

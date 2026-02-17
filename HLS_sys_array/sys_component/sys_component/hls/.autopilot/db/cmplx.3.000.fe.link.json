@@ -1,0 +1,76 @@
+{
+  "0": {
+    "basicblocks": 135,
+    "calls": "1 3 2",
+    "control_depth": 3,
+    "def_use_depth": 3,
+    "file": "systolic.cpp",
+    "fileloc": 11,
+    "instructions": 396,
+    "loads": {
+      "L": 11,
+      "T": 2
+    },
+    "memory_accesses": 35,
+    "name": "systolic_array_kernel",
+    "stores": {
+      "L": 12,
+      "T": 1
+    },
+    "total_instructions": 634
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "systolic.h",
+    "fileloc": 20,
+    "instructions": 10,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "reset",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 27
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "systolic.h",
+    "fileloc": 36,
+    "instructions": 4,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "get_result",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 4
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "systolic.h",
+    "fileloc": 25,
+    "instructions": 17,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 0,
+    "name": "compute",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 105
+  }
+}
