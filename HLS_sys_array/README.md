@@ -1,4 +1,4 @@
-# Parameterized Systolic Array — Vitis HLS
+# Parameterized Systolic Array 
 
 NxN matrix multiplier implemented as a systolic array for Xilinx FPGAs via Vitis HLS.
 
@@ -12,7 +12,7 @@ A systolic array is a grid of **Processing Elements (PEs)**. A-data flows left�
 |---|---|
 | `systolic.h` | Parameters, `data_t` typedef, `PE` struct, kernel prototype |
 | `systolic.cpp` | Top-level HLS kernel with systolic data flow |
-| `systolic_tb.cpp` | Testbench — 5 tests comparing HW vs SW reference |
+| `systolic_tb.cpp` | Testbench - Comparing HW vs SW reference |
 
 ## Parameters (`systolic.h`)
 
