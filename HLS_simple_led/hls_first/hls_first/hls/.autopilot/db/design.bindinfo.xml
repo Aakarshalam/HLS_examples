@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln31_fu_111_p2" SOURCE="led_blink.cpp:31" VARIABLE="add_ln31" MODULE="led_blink" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op setlt" ID="" IMPL="auto" LATENCY="0" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln34_fu_117_p2" SOURCE="led_blink.cpp:34" VARIABLE="icmp_ln34" MODULE="led_blink" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op seteq" ID="" IMPL="auto" LATENCY="0" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln38_fu_123_p2" SOURCE="led_blink.cpp:38" VARIABLE="icmp_ln38" MODULE="led_blink" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op select" ID="" IMPL="auto_sel" LATENCY="0" OPTYPE="select" PRAGMA="" RTLNAME="select_ln38_fu_135_p3" SOURCE="led_blink.cpp:38" VARIABLE="select_ln38" MODULE="led_blink" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="adapter" DISPLAY="bind_adapter axilite" ID="" IMPL="" LATENCY="" OPTYPE="" PRAGMA="" RTLNAME="CTRL_s_axi_U" SOURCE="" VARIABLE="" MODULE="led_blink" LOOP="" BUNDLEDNAME="CTRL" DSP="0" BRAM="0" URAM="0" USAGE="interface" STORAGESUBTYPE="s_axilite" STORAGESIZE=""/>
+</BindInfo>

@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\Nani\\workspace\\HLS_testing\\hls_first\\hls_first\\hls_first.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "01/31/26 13:46:51",
+ "timestampMillis": "1769847411715",
+ "buildStep": {
+  "cmdId": "ca6b3a66-aa04-452b-bbab-f551dab66371",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\Nani\\workspace\\HLS_testing\\hls_first\\hls_first\\logs\\hls_first.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\Users\\Nani\\workspace\\HLS_testing\\hls_first\\hls_config.cfg --work_dir hls_first ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\Users\\Nani\\workspace\\HLS_testing\\hls_first\\hls_config.cfg",
+   "--work_dir",
+   "hls_first"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\Nani\\workspace\\HLS_testing\\hls_first"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "01/31/26 13:46:51",
+ "timestampMillis": "1769847411717",
+ "status": {
+  "cmdId": "ca6b3a66-aa04-452b-bbab-f551dab66371",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "01/31/26 13:47:15",
+ "timestampMillis": "1769847435741",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\Nani\\workspace\\HLS_testing\\hls_first\\led_blink.cpp",
+     "C:/Users\\Nani\\workspace\\HLS_testing\\hls_first\\led_blink.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "01/31/26 13:47:15",
+ "timestampMillis": "1769847435743",
+ "buildStep": {
+  "cmdId": "8ccf13f5-c028-4f6a-acee-c40b5c01b87b",
+  "name": "",
+  "logFile": "C:/Users\\Nani\\workspace\\HLS_testing\\hls_first\\hls_first\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\Nani\\workspace\\HLS_testing\\hls_first"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "01/31/26 13:47:15",
+ "timestampMillis": "1769847435744",
+ "status": {
+  "cmdId": "8ccf13f5-c028-4f6a-acee-c40b5c01b87b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "01/31/26 13:47:30",
+ "timestampMillis": "1769847450405",
+ "status": {
+  "cmdId": "8ccf13f5-c028-4f6a-acee-c40b5c01b87b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "01/31/26 13:47:30",
+ "timestampMillis": "1769847450682",
+ "status": {
+  "cmdId": "ca6b3a66-aa04-452b-bbab-f551dab66371",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "01/31/26 13:47:30",
+ "timestampMillis": "1769847450686",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "01/31/26 13:47:30",
+ "timestampMillis": "1769847450687",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

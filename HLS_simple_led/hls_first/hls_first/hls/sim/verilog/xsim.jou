@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# xsim v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sat Jan 31 14:01:34 2026
+# Process ID         : 39188
+# Current directory  : C:/Users/Nani/workspace/HLS_testing/hls_first/hls_first/hls/sim/verilog
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/led_blink/xsim_script.tcl}
+# Log file           : C:/Users/Nani/workspace/HLS_testing/hls_first/hls_first/hls/sim/verilog/xsim.log
+# Journal file       : C:/Users/Nani/workspace/HLS_testing/hls_first/hls_first/hls/sim/verilog\xsim.jou
+# Running On         : LAPTOP-BUVLRENO
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-1260P
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 16
+# Host memory        : 16870 MB
+# Swap memory        : 33466 MB
+# Total Virtual      : 50336 MB
+# Available Virtual  : 7437 MB
+#-----------------------------------------------------------
+source xsim.dir/led_blink/xsim_script.tcl
+source led_blink.tcl

@@ -1,0 +1,11 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_led_blink_ir
+Args:            
+  - Callee:          'led_blink(ap_uint<32>, bool, ap_uint<8>*)'
+    DebugLoc:        { File: led_blink.cpp, Line: 18, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_led_blink_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...

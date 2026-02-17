@@ -1,0 +1,12 @@
+sv xil_defaultlib "glbl.v"
+sv xil_defaultlib "led_blink.autotb.v"
+sv xil_defaultlib "led_blink.v"
+sv xil_defaultlib "led_blink_CTRL_s_axi.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+sv xil_defaultlib "./file_agent/file_agent_pkg.sv"     
+sv xil_defaultlib "./axivip/axi_pkg.sv"    
+sv xil_defaultlib "./axivip/axi_if.sv"   
+sv xil_defaultlib "./led_blink_subsystem/led_blink_subsystem_pkg.sv"           
+sv xil_defaultlib "./svtb/misc_interface.sv"    
+sv xil_defaultlib "./svtb/sv_module_top.sv"   
+

@@ -1,0 +1,57 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir C:/Users/Nani/workspace/HLS_testing/hls_first/hls_first 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/Nani/workspace/HLS_testing/hls_first/hls_first/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/Nani/workspace/HLS_testing/hls_first/hls_first'.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file C:/Users/Nani/workspace/HLS_testing/hls_first/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=led_blink.cpp' from C:/Users/Nani/workspace/HLS_testing/hls_first/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Nani/workspace/HLS_testing/hls_first/led_blink.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=led_blink.h' from C:/Users/Nani/workspace/HLS_testing/hls_first/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Nani/workspace/HLS_testing/hls_first/led_blink.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=tb_led.cpp' from C:/Users/Nani/workspace/HLS_testing/hls_first/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Nani/workspace/HLS_testing/hls_first/tb_led.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=led_blink' from C:/Users/Nani/workspace/HLS_testing/hls_first/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/Users/Nani/workspace/HLS_testing/hls_first/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg484-1' from C:/Users/Nani/workspace/HLS_testing/hls_first/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from C:/Users/Nani/workspace/HLS_testing/hls_first/hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/Users/Nani/workspace/HLS_testing/hls_first/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/Nani/workspace/HLS_testing/hls_first/hls_first/vitis-comp.json
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Sat Jan 31 14:05:19 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/Users/Nani/workspace/HLS_testing/hls_first/hls_first/hls/hls_data.json outdir=C:/Users/Nani/workspace/HLS_testing/hls_first/hls_first/hls/impl/ip srcdir=C:/Users/Nani/workspace/HLS_testing/hls_first/hls_first/hls ippack_options_dict= ippack_options_dict=
+INFO: Copied 1 ipmisc file(s) to C:/Users/Nani/workspace/HLS_testing/hls_first/hls_first/hls/impl/ip/misc
+INFO: Copied 2 verilog file(s) to C:/Users/Nani/workspace/HLS_testing/hls_first/hls_first/hls/impl/ip/hdl/verilog
+INFO: Copied 2 vhdl file(s) to C:/Users/Nani/workspace/HLS_testing/hls_first/hls_first/hls/impl/ip/hdl/vhdl
+INFO: Copied 10 swdriver file(s) to C:/Users/Nani/workspace/HLS_testing/hls_first/hls_first/hls/impl/ip/drivers
+ipx::create_core: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 615.270 ; gain = 206.316
+INFO: Import ports from HDL: C:/Users/Nani/workspace/HLS_testing/hls_first/hls_first/hls/impl/ip/hdl/vhdl/led_blink.vhd (led_blink)
+INFO: Add axi4lite interface s_axi_CTRL
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add interrupt interface interrupt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP C:/Users/Nani/workspace/HLS_testing/hls_first/hls_first/hls/impl/ip/component.xml
+INFO: Created IP archive C:/Users/Nani/workspace/HLS_testing/hls_first/hls_first/hls/impl/ip/xilinx_com_hls_led_blink_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 31 14:05:53 2026...
+INFO: [HLS 200-802] Generated output file hls_first/led_blink.zip
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 44.994 seconds; peak allocated memory: 491.914 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 51s

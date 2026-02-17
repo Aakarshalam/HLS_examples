@@ -1,0 +1,29 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../tb_led.cpp in debug mode
+   Compiling ../../../../led_blink.cpp in debug mode
+   Generating csim.exe
+=== LED Blink Testbench ===
+Delay count: 5
+
+Test 1: LED Pattern Shifting
+----------------------------
+Cycle 0: LED = 0x1 (.......*)
+Cycle 5: LED = 0x2 (......*.)
+Cycle 10: LED = 0x4 (.....*..)
+Cycle 15: LED = 0x8 (....*...)
+Cycle 20: LED = 0x10 (...*....)
+Cycle 25: LED = 0x20 (..*.....)
+Cycle 30: LED = 0x40 (.*......)
+Cycle 35: LED = 0x80 (*.......)
+Cycle 40: LED = 0x1 (.......*)
+Cycle 45: LED = 0x2 (......*.)
+
+Test 2: Disable Functionality
+-----------------------------
+After disable: LED = 0x1
+PASS: LED reset to initial state
+
+=== All Tests Passed ===
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
